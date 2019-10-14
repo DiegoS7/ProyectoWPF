@@ -24,5 +24,22 @@ namespace Proyecto
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult result = MessageBox.Show("Are you sure to send your guide? \"Nombredelaguia\"?", "Guide Of Somenthing", MessageBoxButton.YesNoCancel);
+            switch (result)
+            {
+                case MessageBoxResult.Yes:
+                    MessageBox.Show("Guide send Succefull", "GOS");
+                    break;
+                case MessageBoxResult.No:
+                    MessageBox.Show("Well, u can edit more later", "GOS");
+                    break;
+                case MessageBoxResult.Cancel:
+                    MessageBox.Show("Oh, Dont Worry", "GOS");
+                    break;
+            }
+        }
     }
 }

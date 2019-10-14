@@ -32,7 +32,7 @@
                 <SolidColorBrush Color="Black" Opacity="0.6"/>
             </TextBox.Background>
         </TextBox>
-        <Button Content="Submit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="504,368,0,0" FontFamily="Baskerville Old Face" FontSize="16"/>
+        <Button Content="Submit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="504,368,0,0" FontFamily="Baskerville Old Face" FontSize="16" Click="Button_Click"/>
         <Image HorizontalAlignment="Left" Height="204" VerticalAlignment="Top" Width="238" Margin="490,120,0,0" Source="Source/katarinaw.jpg" Stretch="Fill"/>
 
     </Grid>
