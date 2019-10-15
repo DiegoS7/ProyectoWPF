@@ -27,19 +27,32 @@ namespace Proyecto
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBoxResult result = MessageBox.Show("Are you sure to send your guide? \"Nombredelaguia\"?", "Guide Of Somenthing", MessageBoxButton.YesNoCancel);
+            MessageBoxResult result = MessageBox.Show("Are you sure to send your guide? \"NameGuide\"?", "Guide Of Somenthing", MessageBoxButton.YesNo);
             switch (result)
             {
                 case MessageBoxResult.Yes:
-                    MessageBox.Show("Guide send Succefull", "GOS");
+                    MessageBox.Show("Guide sent successfully.", "Guide OfS");
                     break;
                 case MessageBoxResult.No:
-                    MessageBox.Show("Well, u can edit more later", "GOS");
-                    break;
-                case MessageBoxResult.Cancel:
-                    MessageBox.Show("Oh, Dont Worry", "GOS");
+                    MessageBox.Show("Well, you can edit more later.", "Guide OfS");
                     break;
             }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult result = MessageBox.Show("Are you sure to close the window ?","Guide Of Somenthing", MessageBoxButton.YesNo);
+            switch (result)
+            {
+                case MessageBoxResult.Yes:
+                    MessageBox.Show("Oh come on!! :(", "Guide OfS");
+                    this.Close();
+                    break;
+                case MessageBoxResult.No:
+                    MessageBox.Show("Yes!, Continue please.", "Guide OfS");
+                    break;
+            }
+           
         }
     }
 }

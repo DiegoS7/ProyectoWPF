@@ -15,7 +15,7 @@
                 <SolidColorBrush Color="Black" Opacity="0.6"/>
             </TextBox.Background>
         </TextBox>
-        <Button Content="Go Back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="214,368,0,0" FontFamily="Baskerville Old Face" FontSize="16"/>
+        <Button Content="Go Back" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="214,368,0,0" FontFamily="Baskerville Old Face" FontSize="16" Click="Button_Click_1"/>
         <Label Content="Game" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="26,82,0,0" FontFamily="High Tower Text" FontSize="20" Foreground="White"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Guide Of Something" FontSize="36" VerticalAlignment="Top" Margin="243,10,0,0" FontFamily="Baskerville Old Face">
             <TextBlock.Foreground>
