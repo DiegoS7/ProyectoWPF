@@ -31,7 +31,8 @@ namespace Proyecto
             switch (result)
             {
                 case MessageBoxResult.Yes:
-                    MessageBox.Show("Guide sent successfully.", "Guide OfS");
+                    MessageBox.Show("Guide sent successfully!!", "Guide OfS");
+                    this.Close();
                     break;
                 case MessageBoxResult.No:
                     MessageBox.Show("Well, you can edit more later.", "Guide OfS");
